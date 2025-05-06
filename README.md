@@ -19,9 +19,10 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 
 ## 📚 Referências / Inspirações
 
-#### <img align="center" alt="reddit logo" height="25" width="25" src="https://images.seeklogo.com/logo-png/40/2/reddit-logo-png_seeklogo-409489.png"> Reddit
+#### <img align="center" alt="reddit logo" height="25" width="25" src="./src/reddit-logo-png_seeklogo-409489.png"> Reddit
 
-<img src="https://i.redd.it/imq4s00bgx1a1.gif" alt="gif rubik cube 2d">
+<img src="./src/rubiks.gif" alt="gif rubik cube 2d">
+
 
 - [Educational Gifs](https://www.reddit.com/r/educationalgifs/comments/127enam/2d_representation_of_a_rubiks_cube_help/)
 
