@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bodyIndex {
+  background: linear-gradient(#87ceeb, #e0f6ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body_1 {
+  background: linear-gradient(#87ceeb, #e0f6ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_1 {
+  padding: 2rem;
+  text-align: center;
+  /* position: fixed; */
+}
+
+.header_1 .principal_title {
+  color: #200;
+  font-size: 3rem;
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: 2px 2px #ff9900;
+  transition: 0.5s;
+}
+
+.header_1 .principal_title:hover {
+  color: #600;
+  text-shadow: 5px 5px #ffaa11;
+}
+
+/* ================================ */
+
+/* #region game_board               */
+.game_board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  /* border: dotted 1px red; */
+  
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.circleA,
+.circleD,
+.circleG {
+  width: 300px;
+  height: 300px;
+  border: solid 1px black;
+}
+
+.circleB,
+.circleE,
+.circleH {
+  width: 250px;
+  height: 250px;
+  border: dashed 1px black;
+}
+
+.circleC,
+.circleF,
+.circleI {
+  width: 200px;
+  height: 200px;
+  border: dotted 1px black;
+}
+
+.circleA {
+  transform: translate(50px, 0px);
+}
+.circleD {
+  transform: translate(0px, -204px);
+}
+.circleG {
+  transform: translate(100px, -506px);
+}
+/* #endregion */
+
+/* ================================ */
+
+/* #region cube                  */
+
+.cube {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: -400px;
+  /* border: solid 1px blue; */
+}
+
+.square {
+  border-radius: 30%;
+  width: 20px;
+  height: 20px;
+  /* color: white; */
+  color: transparent;
+  border: solid 1px transparent;
+}
+
+.face {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 76px;
+  height: 76px;
+}
+
+.square {
+  position: relative;
+}
+
+.face div:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+
+.face div:nth-child(2) {
+  top: -5px;
+  left: 5px;
+}
+
+.face div:nth-child(3) {
+  top: -10px;
+  left: 10px;
+}
+
+.face div:nth-child(4) {
+  top: 5px;
+  left: -5px;
+}
+
+.face div:nth-child(5) {
+  top: -5px;
+  left: -5px;
+}
+
+.face div:nth-child(6) {
+  top: -10px;
+  left: 0px;
+}
+
+.face div:nth-child(7) {
+  top: 10px;
+  left: -10px;
+}
+
+.face div:nth-child(8) {
+  top: 0px;
+  left: -10px;
+}
+
+.face div:nth-child(9) {
+  top: -10px;
+  left: -10px;
+}
+
+
+#face_1 {
+  transform: rotate(-16deg) translate(10px, 120px);
+}
+
+#face_2 {
+  transform: rotate(45deg) translate(135px, -95px);
+}
+
+#face_3 {
+  transform: rotate(104deg) translate(-105px, -265px);
+}
+
+#face_4 {
+  transform: rotate(165deg) translate(-225px, -40px);
+}
+
+#face_5 {
+  transform: rotate(224deg) translate(-125px, 105px);
+}
+
+#face_6 {
+  transform: rotate(285deg) translate(190px, 50px);
+}
+
+/* #endregion cube */
+
+/* ================================ */
+
+/* #region buttons                  */
+
+.buttons {
+  display: flex;
+  gap: 4px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 3px 3px;
+  background-color: fuchsia;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: purple;
+}
+
+.buttons_group1,
+.buttons_group2,
+.buttons_group3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.buttons_group1 {
+  rotate: 180deg;
+  transform: translate(-35px, 415px);
+}
+
+.buttons_group2 {
+  rotate: -50deg;
+  transform: translate(200px, 40px);
+}
+
+.buttons_group3 {
+  rotate: 50deg;
+  transform: translate(-220px, 70px);
+}
+
+.button_control {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* #endregion buttons */
+
+/* ================================ */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/script.js" defer></script>
+    <title>Rubiks Cube 2D</title>
+  </head>
+  <body class="body_1">
+    <header class="header_1">
+      <a class="principal_title" href=""> RUBIKS CUBE 2D </a>
+    </header>
+
+    <div class="game_board">
+      <div class="circle circleA">
+        <div class="circle circleB">
+          <div class="circle circleC"></div>
+        </div>
+      </div>
+      <div class="circle circleD">
+        <div class="circle circleE">
+          <div class="circle circleF"></div>
+        </div>
+      </div>
+      <div class="circle circleG">
+        <div class="circle circleH">
+          <div class="circle circleI"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cube">
+      <div class="face" id="face_1">
+        <div class="square" id="square_11">11</div>
+        <div class="square" id="square_12">12</div>
+        <div class="square" id="square_13">13</div>
+        <div class="square" id="square_14">14</div>
+        <div class="square" id="square_15">15</div>
+        <div class="square" id="square_16">16</div>
+        <div class="square" id="square_17">17</div>
+        <div class="square" id="square_18">18</div>
+        <div class="square" id="square_19">19</div>
+      </div>
+      <div class="face" id="face_2">
+        <div class="square" id="square_21">21</div>
+        <div class="square" id="square_22">22</div>
+        <div class="square" id="square_23">23</div>
+        <div class="square" id="square_24">24</div>
+        <div class="square" id="square_25">25</div>
+        <div class="square" id="square_26">26</div>
+        <div class="square" id="square_27">27</div>
+        <div class="square" id="square_28">28</div>
+        <div class="square" id="square_29">29</div>
+      </div>
+      <div class="face" id="face_3">
+        <div class="square" id="square_31">31</div>
+        <div class="square" id="square_32">32</div>
+        <div class="square" id="square_33">33</div>
+        <div class="square" id="square_34">34</div>
+        <div class="square" id="square_35">35</div>
+        <div class="square" id="square_36">36</div>
+        <div class="square" id="square_37">37</div>
+        <div class="square" id="square_38">38</div>
+        <div class="square" id="square_39">39</div>
+      </div>
+      <div class="face" id="face_4">
+        <div class="square" id="square_41">41</div>
+        <div class="square" id="square_42">42</div>
+        <div class="square" id="square_43">43</div>
+        <div class="square" id="square_44">44</div>
+        <div class="square" id="square_45">45</div>
+        <div class="square" id="square_46">46</div>
+        <div class="square" id="square_47">47</div>
+        <div class="square" id="square_48">48</div>
+        <div class="square" id="square_49">49</div>
+      </div>
+      <div class="face" id="face_5">
+        <div class="square" id="square_51">51</div>
+        <div class="square" id="square_52">52</div>
+        <div class="square" id="square_53">53</div>
+        <div class="square" id="square_54">54</div>
+        <div class="square" id="square_55">55</div>
+        <div class="square" id="square_56">56</div>
+        <div class="square" id="square_57">57</div>
+        <div class="square" id="square_58">58</div>
+        <div class="square" id="square_59">59</div>
+      </div>
+      <div class="face" id="face_6">
+        <div class="square" id="square_61">61</div>
+        <div class="square" id="square_62">62</div>
+        <div class="square" id="square_63">63</div>
+        <div class="square" id="square_64">64</div>
+        <div class="square" id="square_65">65</div>
+        <div class="square" id="square_66">66</div>
+        <div class="square" id="square_67">67</div>
+        <div class="square" id="square_68">68</div>
+        <div class="square" id="square_69">69</div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons_group1">
+        <button class="button" id="button_1H">&lt;</button>
+        <button class="button" id="button_1A">&gt;</button>
+        <button class="button" id="button_2H">&lt;</button>
+        <button class="button" id="button_2A">&gt;</button>
+        <button class="button" id="button_3H">&lt;</button>
+        <button class="button" id="button_3A">&gt;</button>
+      </div>
+      <div class="buttons_group2">
+        <button class="button" id="button_4H">&lt;</button>
+        <button class="button" id="button_4A">&gt;</button>
+        <button class="button" id="button_5H">&lt;</button>
+        <button class="button" id="button_5A">&gt;</button>
+        <button class="button" id="button_6H">&lt;</button>
+        <button class="button" id="button_6A">&gt;</button>
+      </div>
+      <div class="buttons_group3">
+        <button class="button" id="button_7H">&lt;</button>
+        <button class="button" id="button_7A">&gt;</button>
+        <button class="button" id="button_8H">&lt;</button>
+        <button class="button" id="button_8A">&gt;</button>
+        <button class="button" id="button_9H">&lt;</button>
+        <button class="button" id="button_9A">&gt;</button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="button_control" id="button_reset">Reset</button>
+      <button class="button_control" id="button_shuffle">Shuffle</button>
+    </div>
+  </body>
+</html>
